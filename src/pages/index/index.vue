@@ -3,7 +3,7 @@
         <view class="top-banner">
             <view class="top-nav">
                 <text>12:00</text>
-                <img src="/static/1.png" alt="">
+                <img src="/static/444.png" alt="">
             </view>
             <img class="top-bg" src="static/login_top_bg.png" alt="">
             <img class="logo" src="static/logo.png" alt="">
@@ -106,6 +106,7 @@
     }
     .top-nav img{
         position: absolute;
+        width: 25%;
         right: 20px;
         top: 10px;
     }
@@ -113,7 +114,7 @@
     .logo {
         position: absolute;
         top: 70px;
-        width: 200px;
+        width: 180px;
         right: 4%;
     }
 
