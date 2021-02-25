@@ -2,7 +2,8 @@
     <view class="main">
         <view class="top-banner">
             <view class="top-nav">
-                <span>12:00</span>
+                <text>12:00</text>
+                <img src="/static/1.png" alt="">
             </view>
             <img class="top-bg" src="static/login_top_bg.png" alt="">
             <img class="logo" src="static/logo.png" alt="">
@@ -59,6 +60,7 @@
             login() {
                 console.log(window.location);
                 console.log(window.location.host);
+                console.log(window.location.href)
                 if (!this.timer) {
                     this.count = 10;
                     this.show = false;
@@ -87,6 +89,7 @@
         position: relative;
     }
 
+
     .active {
         transform: translate(10px, -20px) scale(1.1);
     }
@@ -95,11 +98,16 @@
         height: 40vh;
     }
 
-    .top-nav {
+    .top-nav > text{
         position: absolute;
         top: 10px;
         left: 20px;
         color: #fff;
+    }
+    .top-nav img{
+        position: absolute;
+        right: 20px;
+        top: 10px;
     }
 
     .logo {
