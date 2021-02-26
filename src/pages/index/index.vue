@@ -58,7 +58,7 @@
 
             },
             login() {
-                this.$axios({
+                this.axios({
                     method: "get",
                     url: "/"
                 }).then(res => {
