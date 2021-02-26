@@ -58,9 +58,16 @@
 
             },
             login() {
-                console.log(window.location);
-                console.log(window.location.host);
-                console.log(window.location.href)
+                this.$axios({
+                    method: "get",
+                    url: "/"
+                }).then(res => {
+                    console.log(res);
+                    console.log(res.data);
+                }).catch(err => {
+                    console.log(err);
+                });
+
                 if (!this.timer) {
                     this.count = 10;
                     this.show = false;
@@ -98,13 +105,14 @@
         height: 40vh;
     }
 
-    .top-nav > text{
+    .top-nav > text {
         position: absolute;
         top: 10px;
         left: 20px;
         color: #fff;
     }
-    .top-nav img{
+
+    .top-nav img {
         position: absolute;
         width: 25%;
         right: 20px;
